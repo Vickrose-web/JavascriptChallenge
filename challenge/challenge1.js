@@ -10,7 +10,8 @@ BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in me
 Your tasks:
 1. Store Mark's and John's mass and height in variables
 2. Calculate both their BMIs using the formula (you can even implement both versions)
-3. Create a Boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
+3. Create a Boolean variable 
+markHigherBMI' containing information about whether Mark has a higher BMI than John.
 
 Test data:
 Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
@@ -20,3 +21,19 @@ GOOD LUCK
 
 */
 
+//solution
+let MarkHeight = 1.69 , MarkWeight = 78;
+let JohnHeight = 1.95, JohnWeight = 92;
+
+//caculating the BMI
+let JohnBmi = JohnWeight / (JohnHeight * JohnHeight);
+console.log(JohnBmi);
+
+let MarkBmi = MarkWeight / (MarkHeight * MarkHeight);
+console.log(MarkBmi);
+
+//testing if mark bmi is greater than john bmi
+let markHigherBMI = MarkBmi == JohnBmi;
+console.log(markHigherBMI);
+
+//><>=<= ==
